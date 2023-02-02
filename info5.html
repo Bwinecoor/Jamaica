@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Jamaica!</title>
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+
+      .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-y: hidden;
+        transition: 0.5s;
+      }
+
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .overlay a:hover,
+      .overlay a:focus {
+        color: #f1f1f1;
+      }
+
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .overlay {
+          overflow-y: auto;
+        }
+        .overlay a {
+          font-size: 20px;
+        }
+        .overlay .closebtn {
+          font-size: 40px;
+          top: 15px;
+          right: 35px;
+        }
+      }
+      table, th, td {
+        border-radius: 25px;
+        background-color:#349538;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="info1.html">Airport Info, Taxi, and Weather</a>
+        <a href="info2.html">Hotels</a>
+        <a href="info4.html">Restaurants</a>
+        <a href="info5.html">Landmarks</a>
+      </div>
+    </div>
+    <span style="font-size: 40px; cursor: pointer;" onclick="openNav()"
+      >&#9776; </span
+    >
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
+    <center>
+      <h1 class="google-font size-big">Landmarks</h1>
+      <p class="google-font size-medium">Here in Jamaica, we have some beautiful landmarks that you should definetly visit during your stay!</p>
+      <table>
+        <tr>
+          <th class="google-font size-small"><a href="https://www.bobmarleymuseum.com/" target="blank">Bob Marley Museum</a></th>
+          <th class="google-font size-small"><a href="https://www.jamaicavillas.com/discovery-bay" target="blank">Discovery Bay</a></th>
+          <th class="google-font size-small"><a href="http://www.jnht.com/site_fort_charles.php" target="blank">Fort Charles</a></th>
+          <th class="google-font size-small"><a href="http://www.jnht.com/site_seville_great_house.php" target="blank">Seville Great House</a></th>
+          <th class="google-font size-small"><a href="https://en.wikipedia.org/wiki/Spanish_Town" target="blank">Spanish Town</a></th>
+        </tr>
+        <tr>
+      <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/61/f8/c6.jpg" width="250" height="183.5">
+      <img src="https://i.imgur.com/7yt09OY_d.webp?maxwidth=760&fidelity=grand" width="250" height="183.5">
+      <img src="https://i.imgur.com/hUuk1ZB_d.webp?maxwidth=760&fidelity=grand" width="250" height="183.5">
+      <img src="https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_420,q_75,w_630/https://assets.simpleviewinc.com/simpleview/image/upload/crm/jamaica/Seville_Great_House_1_courtesy-of-JIS-d3b855615056a36_d3b85678-5056-a36a-07455041bfd63bfc.jpg" width="250" height="183.5">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/f0/e4/16/getlstd-property-photo.jpg?w=700&h=500&s=1" width="250" height="183.5">
+    </tr>
+    <tr>
+      <td class="google-font size-small middle">A museum in Kingston, Jamaica, which is dedicated to Bob Marley. This museum was Bob Marleys former place of residence and was home to the Tuff Gong reggae record label which was founded by The Wailers in 1970.</td>
+      <td class="google-font size-small middle">A town in Aint Ann Parish on the northern coast of Jamaica. It is also known as Dry Harbour. A fun fact about this place is that people argu wether Christopher Columbus first landed in Discovery Bay or in Sevilla la Nueva.</td>
+      <td class="google-font size-small middle">Built in the late 1650-60s, Fort Charles was the first fort to be built in Port Royal. It was built when the English gained control of the Island.</td>
+      <td class="google-font size-small middle">It is symbolic of the English period. After the islands capture in 1655, New Seville was abandoned by the Spaniards and the English divided and allotted the land to victorious officers and soldiers.</td>
+      <td class="google-font size-small middle">It is the capital and the largest town in the parish of St. Catherine in the historic county of Middlesex, Jamaica. It was the Spanish and British capital from 1534 until 1872. This town has many memorials, national archives, and one of the oldest Anglican churces outside of England.</td>
+    </tr>
+    <tr>
+        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d906419.0047146855!2d-77.0186089287609!3d17.909664597511508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8edb3eff884a74dd%3A0x835f6e92a2d00558!2sBob%20Marley%20Museum!5e0!3m2!1sen!2sus!4v1649814136259!5m2!1sen!2sus" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </td>
+        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15138.381310794099!2d-77.40556701471982!3d18.456674003179778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eda4d94be8c6d89%3A0x5d1975eb2a81cb30!2sDiscovery%20Bay%2C%20Jamaica!5e0!3m2!1sen!2sus!4v1649814300333!5m2!1sen!2sus" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164954.67474952235!2d-76.81324387152112!3d17.978487517866956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8edb6a8ed510323d%3A0x643b09a6ec6cb7ed!2sFort%20Charles!5e0!3m2!1sen!2sus!4v1649814604408!5m2!1sen!2sus" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7263.090403329399!2d-77.21435235181607!3d18.43370473362518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eda559669dc784d%3A0xfe63ceee669216fe!2sSeville%20Great%20House!5e0!3m2!1sen!2sus!4v1649814709619!5m2!1sen!2sus" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195206.96037656683!2d-77.14626343316172!3d18.073164116141324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8edb12e1cd3d06dd%3A0x7eb9355f26bcf0dd!2sSpanish%20Town%2C%20Jamaica!5e0!3m2!1sen!2sus!4v1649814761649!5m2!1sen!2sus" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+    </tr>
+    </table>
+    </center>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

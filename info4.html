@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Jamaica!</title>
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+
+      .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-y: hidden;
+        transition: 0.5s;
+      }
+
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .overlay a:hover,
+      .overlay a:focus {
+        color: #f1f1f1;
+      }
+
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .overlay {
+          overflow-y: auto;
+        }
+        .overlay a {
+          font-size: 20px;
+        }
+        .overlay .closebtn {
+          font-size: 40px;
+          top: 15px;
+          right: 35px;
+        }
+      }
+      table, th, td {
+        border: 1px solid black;
+        border-radius: 100px;
+        background-color: #349538;
+        color: black;
+      }
+      a {
+        font-family: "Bebas Neue", cursive;
+  color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="info1.html">Airport Info, Taxi, and Weather</a>
+        <a href="info2.html">Hotels</a>
+        <a href="info4.html">Restaurants</a>
+        <a href="info5.html">Landmarks</a>
+      </div>
+    </div>
+    <span style="font-size: 40px; cursor: pointer;" onclick="openNav()"
+      >&#9776; </span
+    >
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
+    <center>
+      <h1 class="google-font size-big">Resturants</h1>
+      <table>
+        <tr>
+          <th><img src="https://i.imgur.com/BlCyyrP_d.webp?maxwidth=760&fidelity=grand" width="225" height="205"></th>
+          <th><img src="https://i.imgur.com/OkGiXm3_d.webp?maxwidth=760&fidelity=grand" width="225" height="205"></th>
+          <th><img src="https://i.imgur.com/vGaEwif_d.webp?maxwidth=760&fidelity=grand" width="225" height="205"></th>
+          <th><img src="https://316111.smushcdn.com/2090723/wp-content/uploads/2010/05/Scotchies.jpg?lossy=0&strip=0&webp=1" width="225" height="205"></th>
+          <th><img src="https://www.my-island-jamaica.com/images/chill_out_hut.jpg" width="225" height="205"></th>
+        </tr>
+        <tr>
+          <td class="google-font size-small middle"><a href="https://www.tripadvisor.com/Restaurant_Review-g147314-d2057483-Reviews-Belinda_s-Port_Antonio_Portland_Parish_Jamaica.html" target="blank">BELINDA'S</a></td>
+          <td class="google-font size-small middle"><a href="https://www.tripadvisor.com/Restaurant_Review-g147313-d1675068-Reviews-Murphy_s_West_End_Restaurant-Negril_Westmoreland_Parish_Jamaica.html" target="blank">MURPHY'S WEST END RESTAURANT</a></td>
+          <td class="google-font size-small middle"><a href="http://www.evitasjamaica.com/" target="blank">EVITA'S ITALIAN RESTAURANT</a></td>
+          <td class="google-font size-small middle"><a href="https://www.tripadvisor.com/Restaurant_Review-g147311-d1516484-Reviews-Scotchies-Montego_Bay_Saint_James_Parish_Jamaica.html" target="blank">SCOTCHIES</a></td>
+          <td class="google-font size-small middle"><a href="http://thechillouthut.com/" target="blank">CHILL OUT HUT</a></td>
+        </tr>
+        <tr>
+          <td class="google-font size-small middle">4GHQ+G82, Port Antonio, Jamaica</td>
+          <td class="google-font size-small middle">W End Rd, West End, Jamaica</td>
+          <td class="google-font size-small middle">Evita's Italian Restaurant, Eden Bower Rd, Jamaica</td>
+          <td class="google-font size-small middle">F4G4+FCQ, Montego Bay, Jamaica</td>
+          <td class="google-font size-small middle">A1, Greenwood Avenue, Jamaica</td>
+        </tr>
+        <tr>
+            <td class="google-font size-small middle">(1)876-389-8826</td>
+            <td class="google-font size-small middle">(1)876-367-0475</td>
+            <td class="google-font size-small middle">(1)876-974-2333</td>
+            <td class="google-font size-small middle">N/A</td>
+            <td class="google-font size-small middle">(1)876-620-8720</td>
+          </tr>
+      </table>
+    </center>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
